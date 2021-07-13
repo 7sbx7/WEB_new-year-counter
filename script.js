@@ -2,8 +2,8 @@
 
 
 let currentYear = new Date().getFullYear();
-//const countDate = new Date(`${currentYear+1}-01-01, 00:00:00`)
-const countDate = newDate(`2021-03-11, 20:30:00`)
+const countDate = new Date(`${currentYear+1}-01-01, 00:00:00`)
+//const countDate = new Date(`2022-03-11, 20:30:00`)
 document.getElementById('year').innerText = (countDate.getFullYear() - 2000);
 
 let gap;
@@ -26,10 +26,10 @@ function newYear() {
     document.getElementById('minute').innerText = m;
     document.getElementById('second').innerText = s;
 
-
-
 }
 
 setInterval(function () {
     newYear();
 })
+
+
